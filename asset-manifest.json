@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/oxynet_v_0.0.1/static/css/main.040747af.chunk.css",
-    "main.js": "/oxynet_v_0.0.1/static/js/main.501a967b.chunk.js",
-    "main.js.map": "/oxynet_v_0.0.1/static/js/main.501a967b.chunk.js.map",
+    "main.css": "/oxynet_v_0.0.1/static/css/main.0cbae8e1.chunk.css",
+    "main.js": "/oxynet_v_0.0.1/static/js/main.5aff71db.chunk.js",
+    "main.js.map": "/oxynet_v_0.0.1/static/js/main.5aff71db.chunk.js.map",
     "runtime-main.js": "/oxynet_v_0.0.1/static/js/runtime-main.ec0af0d5.js",
     "runtime-main.js.map": "/oxynet_v_0.0.1/static/js/runtime-main.ec0af0d5.js.map",
     "static/css/2.60c782b1.chunk.css": "/oxynet_v_0.0.1/static/css/2.60c782b1.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.108eca91.chunk.js.map": "/oxynet_v_0.0.1/static/js/3.108eca91.chunk.js.map",
     "index.html": "/oxynet_v_0.0.1/index.html",
     "static/css/2.60c782b1.chunk.css.map": "/oxynet_v_0.0.1/static/css/2.60c782b1.chunk.css.map",
-    "static/css/main.040747af.chunk.css.map": "/oxynet_v_0.0.1/static/css/main.040747af.chunk.css.map",
+    "static/css/main.0cbae8e1.chunk.css.map": "/oxynet_v_0.0.1/static/css/main.0cbae8e1.chunk.css.map",
     "static/js/2.84e8e12a.chunk.js.LICENSE.txt": "/oxynet_v_0.0.1/static/js/2.84e8e12a.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/oxynet_v_0.0.1/static/media/fontawesome-webfont.f691f37e.woff"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.ec0af0d5.js",
     "static/css/2.60c782b1.chunk.css",
     "static/js/2.84e8e12a.chunk.js",
-    "static/css/main.040747af.chunk.css",
-    "static/js/main.501a967b.chunk.js"
+    "static/css/main.0cbae8e1.chunk.css",
+    "static/js/main.5aff71db.chunk.js"
   ]
 }
