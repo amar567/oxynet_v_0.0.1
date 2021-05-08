@@ -5,7 +5,6 @@ import './Homepage.css'
 // import District from './districts'
 // import Cookies from 'universal-cookie';
 import './options.css'
-import logo from './../img/white_logo.png'
 
 // const cookies = new Cookies();
 
