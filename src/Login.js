@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './Profile.css';
 import Cookies from 'universal-cookie';
-import domain from './Domain';
-import Items from './redirect'
+// import domain from './Domain';
+// import Items from './redirect'
 // import GoogleLogin from 'react-google-login';
 
 // const responseGoogle = (response) => {
@@ -57,7 +57,7 @@ export default class Login extends Component {
         if (result.status === 'ok') {
             localStorage.setItem('token', result.token)
             localStorage.setItem('Id', result.Id)
-            cookies.set('token', result.token)
+            cookies.set('signedIn', true)
             window.location.assign('./dashboard')
         } else {
             alert(result.error)
@@ -105,7 +105,7 @@ export default class Login extends Component {
                     </a>
                 </div>
                 <div style={{padding:'0 20px'}}>
-                    <button className="bluButton" onClick={this.submit} style={{width:'100%'}} onClick={this.submit}>Sign In</button>
+                    <button className="bluButton" style={{width:'100%'}} onClick={this.submit}>Sign In</button>
                 </div>
                 <br/>
                 <div style={{padding:'0'}}>

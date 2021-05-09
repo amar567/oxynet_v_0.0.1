@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './Profile.css';
-import Cookies from 'universal-cookie';
-import domain from './Domain';
-const cookies = new Cookies();
+// import Cookies from 'universal-cookie';
+// import domain from './Domain';
+// const cookies = new Cookies();
 
 // import {Route, BrowserRouter as Router, Switch} from 'react-router-dom';
 

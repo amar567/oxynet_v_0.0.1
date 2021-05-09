@@ -14,7 +14,7 @@ import Report from './Components/Report';
 function App() {
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Route exact path={"/"} component={Homepage}/>
         <Route exact path={"/report"} component={Report}/>
         <Route exact path={"/dashboard"} component={SupplierDashboard}/>

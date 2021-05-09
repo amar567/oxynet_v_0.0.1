@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './card.css'
-import Cookies from 'universal-cookie'
+// import Cookies from 'universal-cookie'
 
-const cookies = new Cookies();
+// const cookies = new Cookies();
 
 export default class Card extends Component {
 

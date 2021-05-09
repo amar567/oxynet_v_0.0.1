@@ -1,2 +1,2 @@
-let domain;
-export default domain = 'http//localhost:3005'
+// let domain;
+// export default domain = 'http//localhost:3005'

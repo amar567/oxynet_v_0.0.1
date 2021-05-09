@@ -75,7 +75,7 @@ constructor(props){
         await this.setState({index:index})
         // await this.setState({state:state})
         // console.log(this.state.state)
-        const state = this.state.editcard.state
+        // const state = this.state.editcard.state
         var districts = dist(this.state.state)
         await this.setState({districts : districts})
         // console.log(this.state.districts)
@@ -114,7 +114,7 @@ constructor(props){
             })
         }).then((res) => res.json())
         console.log(result);
-        if (result.status=='ok') {            
+        if (result.status==='ok') {            
                 const d = new Date()
                 const a = d.toLocaleString()
                 console.log(a)
@@ -184,7 +184,7 @@ constructor(props){
         // console.log(Id,index)
         var render = this.state.render
         render.splice(index, 1)
-        if (result.status == 'ok'){
+        if (result.status === 'ok'){
             this.setState({render: render})
         }else{alert(result.error)
         // console.log(result);
@@ -265,8 +265,9 @@ constructor(props){
     }
 
     logout = ()=>{
-        localStorage.clear()
-        cookies.remove('token')
+        localStorage.removeItem('token')
+        localStorage.removeItem('Id')
+        cookies.remove('token','Id')
         window.location.assign('./')
     }
 
@@ -310,14 +311,14 @@ constructor(props){
                                         <div style={{padding: '12px'}}>
                                             <select style={{borderRadius: '10px', width: '100%', padding: '13px',border:'1px solid #5A78FD'}}  name="state" id="state" onChange={this.stateChangeHandler} required>
                                                 <option disabled selected>Select state</option>
-                                                { states.map((state,index) => {return (this.state.state==state)? <option key={index} name={state} selected>{state}</option> : <option key={index} name={state}>{state}</option>}) }
+                                                { states.map((state,index) => {return (this.state.state===state)? <option key={index} name={state} selected>{state}</option> : <option key={index} name={state}>{state}</option>}) }
                                                 {/* {states.map((state,index) => (<option key={index} name={state}>{state}</option>))} */}
                                             </select>
                                         </div>
                                         <div style={{padding: '12px'}}>
                                             <select style={{borderRadius: '10px', width: '100%', padding: '13px',border:'1px solid #5A78FD'}}  name="district" id="district" defaultValue={this.state.disrtict} onChange={this.districtChangeHandler} required>
                                                 <option disabled  selected>Select district</option>
-                                                { this.state.districts.map((district,index) => {return (this.state.district==district)? <option key={index} selected>{district}</option>:<option key={index}>{district}</option>}) }
+                                                { this.state.districts.map((district,index) => {return (this.state.district===district)? <option key={index} selected>{district}</option>:<option key={index}>{district}</option>}) }
                                             </select>
                                         </div>
                                         </div>

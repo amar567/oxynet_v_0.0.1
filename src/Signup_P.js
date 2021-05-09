@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './Profile.css';
 import './main.css';
-import Cookies from 'universal-cookie';
-import domain from './Domain';
+// import Cookies from 'universal-cookie';
+// import domain from './Domain';
 
-const cookies = new Cookies();
+// const cookies = new Cookies();
 
 export default class Signup_P extends Component {
     
@@ -23,7 +23,7 @@ export default class Signup_P extends Component {
     submit = async (event)=> {
         event.preventDefault()
         this.setState({disabled:true})
-        if (this.state.password==this.state.passwordConfirm){
+        if (this.state.password===this.state.passwordConfirm){
             const result = await fetch(`https://oxynet.herokuapp.com/api/v1/users/signup/auth`, {
                 method: 'POST',
                 headers: {

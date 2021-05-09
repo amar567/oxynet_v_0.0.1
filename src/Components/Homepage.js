@@ -45,13 +45,13 @@ export default class Homepage extends Component {
         let val = event.target.value
         await this.setState({render: []})
         await this.setState({district: val})
-        if(this.state.district ==''){
+        if(this.state.district ===''){
             await this.setState({district:''})
         }
         // console.log(this.state.district)
         let filterBydistrict = this.state.response.filter(
             card => {
-                if(card.district == this.state.district){
+                if(card.district === this.state.district){
                     return(card)
                 }
             }
