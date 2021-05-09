@@ -50,11 +50,7 @@ export default class Homepage extends Component {
         }
         // console.log(this.state.district)
         let filterBydistrict = this.state.response.filter(
-            card => {
-                if(card.district === this.state.district){
-                    return(card)
-                }
-            }
+            card => (card.district === this.state.district)
         )
         if(val !== 'Reset district'){
             this.setState({render: filterBydistrict})

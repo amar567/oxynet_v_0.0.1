@@ -14,7 +14,7 @@ console.log("Service Worker Loaded...");
 //     // Perform some task
 //   });
 const data = { title: "Help us" }
-const url = 'http://localhost:3000/'
+const url = 'https://oxynet.netlify.app'
 // const signed_in = localStorage.getItem("signed_in")
 
 // console.log(window.localStorage.getItem('signedIn'))
