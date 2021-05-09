@@ -14,14 +14,14 @@ import Report from './Components/Report';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Route exact path="/" component={Homepage}/>
-        <Route exact path="/report" component={Report}/>
-        <Route exact path="/dashboard" component={SupplierDashboard}/>
-        <Route exact path="/login" component={Login}/>
-        <Route exact path="/Fpw" component={Fpw}  />
-        <Route exact path="/ResetPassword" component={ResetPassword}  />
-        <Route exact path="/Signup" component={Signup_P}  />
+      <Router basename={process.env.PUBLIC_URL}>
+        <Route exact path={"/"} component={Homepage}/>
+        <Route exact path={"/report"} component={Report}/>
+        <Route exact path={"/dashboard"} component={SupplierDashboard}/>
+        <Route exact path={"/login"} component={Login}/>
+        <Route exact path={"/Fpw"} component={Fpw}  />
+        <Route exact path={"/ResetPassword"} component={ResetPassword}  />
+        <Route exact path={"/Signup"} component={Signup_P}  />
       {/* <Alert></Alert> */}
       {/* <About></About> */}
       </Router>
