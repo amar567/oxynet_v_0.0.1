@@ -77,7 +77,7 @@ export default class Fpw extends Component {
                 <div className="center">
                     <a href="/signup">
                         <font style={{color: "#91919F",fontSize:"14px"}}>
-                        Not with Air yet? Sign up
+                        Not with OXYNET yet? Sign up
                         </font>
                     </a>
                 </div>
