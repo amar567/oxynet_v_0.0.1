@@ -9,13 +9,14 @@ import Fpw from './Fpw'
 import ResetPassword from './ResetPassword'
 import Signup_P from './Signup_P'
 import Report from './Components/Report';
+import NewHomePage from './NewHomePage/NewHomePage'
 
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Route exact path={"/"} component={Homepage}/>
+        <Route exact path={"/"} component={NewHomePage}/>
         <Route exact path={"/report"} component={Report}/>
         <Route exact path={"/dashboard"} component={SupplierDashboard}/>
         <Route exact path={"/login"} component={Login}/>

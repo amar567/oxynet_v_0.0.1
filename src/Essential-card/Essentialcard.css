@@ -1,0 +1,13 @@
+.es-card-whole{
+    width: 100vw;
+}
+
+.es-card{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    height: 28vh;
+}
+
+.card-tab{
+    display: flex;}
